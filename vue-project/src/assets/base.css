@@ -1,0 +1,98 @@
+:root {
+    --blue: rgb(69, 123, 157);
+    --light-blue: rgb(168, 218, 220);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+    font-weight: normal;
+}
+
+body {
+    min-height: 100vh;
+    transition: color 0.5s;
+    line-height: 1.6;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 30px;
+}
+
+.gif-container {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.image {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blue);
+    transition: 0.4s;
+    font-size: 14px;
+}
+
+@media (hover: hover) {
+    a:hover {
+        color: var(--light-blue);
+    }
+}
+
+nav {
+    width: 100%;
+    font-size: 12px;
+    text-align: left;
+    margin-top: 3em;
+}
+
+nav a.router-link-exact-active {
+    font-weight: bold;
+    transition: .1s;
+}
+
+nav a {
+    display: inline-block;
+    padding: 0 1em;
+}
+
+.header {
+    font-size: 18px;
+    text-align: center;
+    margin: 1em;
+    font-weight: bold;
+}
+
+.input {
+    width: 260px;
+    padding: 20px;
+    border: 2px solid var(--blue);
+    border-radius: 10px;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.output-container {
+    margin: 2em 0;
+}
